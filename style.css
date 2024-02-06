@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+
+:root {
+  --main-color: #d7c7ae;
+  --primary-color: #8a6d46;
+  --hover: #5a4d3e;
+  --black: #2a201c;
+  --white: #fff;
+  --light-bg: #f3efec;
+  --dark-bg: rgba(0, 0, 0, 0.7);
+  --border: 0.1rem solid #aaa;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Playfair Display", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+html::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: var(--white);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+}
+
+section {
+  padding: 5rem 7%;
+}
+
+/*header*/
+
+.header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--box-shadow);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--main-color);
+  z-index: 1000;
+}
+
+.header .logo {
+  font-family: "Italiana", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: rgb(61, 61, 61);
+  text-transform: capitalize;
+}
+
+.header .navbar #close-navbar {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  color: var(--black);
+  display: none;
+}
+
+.header .navbar a {
+  font-size: 2rem;
+  margin-left: 2rem;
+  color: var(--black);
+  text-transform: capitalize;
+}
+
+.header .navbar a:hover {
+  padding-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+#menu-btn {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--black);
+  display: none;
+}
+
+/*header*/
+
+/*home*/
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(/Imagens/foto1.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(70%);
+}
+
+.home .content {
+  max-width: 60rem;
+}
+
+.home .content span {
+  font-size: 10rem;
+  letter-spacing: 0.5rem;
+}
+
+.home .content p {
+  font-size: 4rem;
+  font-weight: 100;
+  color: rgb(49, 49, 49);
+}
