@@ -382,7 +382,6 @@ section {
 
 .visit .row .image img {
   width: 100%;
-  filter: grayscale(50%);
 }
 
 .visit .row form {
@@ -392,10 +391,15 @@ section {
 }
 
 .visit .row form h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(201, 201, 201);
+  background-image: linear-gradient(180deg, #5a4d3e 50%, transparent 70%);
   font-size: 3rem;
   font-weight: 800;
   text-align: center;
-  color: var(--primary-color);
+  color: var(--main-color);
   padding-bottom: 1rem;
   text-transform: uppercase;
 }
