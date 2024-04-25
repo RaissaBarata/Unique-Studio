@@ -191,6 +191,7 @@ section {
 
 .about .row .image img {
   width: 80%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .about .row .content {
   flex: 1 1 51rem;
@@ -309,6 +310,7 @@ section {
   height: 25rem;
   overflow: hidden;
   width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .blogs .box-container .box .image img {
@@ -352,6 +354,7 @@ section {
 
 .blogs .box-container .box .content a {
   font-size: 1.4rem;
+  color: var(--main-color);
 }
 
 /* blog */
